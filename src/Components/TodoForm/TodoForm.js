@@ -53,9 +53,9 @@ export default function TodoForm({task , setTask ,taskList , settaskList , title
             {priorityStatus ? <small className="text-danger">select any one  priority</small> :""}
           </div>
         </div>
-        <div className="row mt-4 mb-4">
+        <div className="row mt-2 mb-4">
           <div className="col-md-12">
-            <button className="btn btn-primary w-25" onClick={addTask}>Add</button>
+            <button className="btn  w-25" style={{border:"2px solid #4682B4" , color : "#4682B4" , fontWeight :"bold" , }}  onClick={addTask}>Add</button>
           </div>
         </div>
     </>

@@ -1,6 +1,6 @@
 header{
-    height: 50px;
-    background-color: yellowgreen;
+    height: 60px;
+    background-color: steelblue;
     color: white;
     display: flex;
      justify-content: center;
@@ -8,6 +8,7 @@ header{
     align-items: center;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
    
 
 

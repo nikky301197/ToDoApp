@@ -4,14 +4,16 @@ export default function TodoTable({taskStatus , settaskStatus ,taskList , settas
       <button
           onClick={() => settaskStatus("Active")}
           disabled={taskStatus == "Active" ? true : false}
-          className="btn btn-success mt-3 ml-2"
+          className="btn btn-outline-success mt-3 ml-2"
+          style={{borderWidth:2 , fontWeight:"bold"}}
         >
           Active ({taskList.filter((task) => task.status == "Active").length})
         </button>
         <button
           onClick={() => settaskStatus("Deactive")}
           disabled={taskStatus == "Deactive" ? true : false}
-          className="btn btn-danger mt-3 ml-2"
+          className="btn btn-outline-danger mt-3 ml-2"
+          style={{borderWidth:2 , fontWeight:"bold"}}
         >
           Deactive (
           {taskList.filter((task) => task.status == "Deactive").length})
@@ -36,10 +38,10 @@ export default function TodoTable({taskStatus , settaskStatus ,taskList , settas
                   style={{
                     backgroundColor:
                       task.priorityId == 1
-                        ? "red"
+                        ? "#FF3A3F"
                         : task.priorityId == 2
-                        ? "orange"
-                        : "green",
+                        ? "#F7EE6B"
+                        : "#73C686",
                     color: "white",
                   }}
                 >
